@@ -7,7 +7,8 @@ body {
 h2 {
   font-size: 26px;
   font-weight: 400;
-  margin: 0 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -21,19 +22,13 @@ p {
   margin: 0;
 }
 
-section {
-  padding: 20px;
-}
-
 section.alternate-background {
   background-color: #00a699;
   color: #fff;
 }
-
-main img {
-  width: 100px;
+.group img {
+  width: 100%;
 }
-
 /* ---  Groups & Items --- */
 
 .group {
@@ -81,12 +76,14 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
+  display: flex;
   border: 2px solid #ff385c;
   padding: 10px;
 }
 
 form label {
   font-weight: bold;
+  flex-direction: row;
 }
 
 form select,
@@ -117,3 +114,43 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+/* ---------- Mobile ---------- */
+
+/* NAV */
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* FORM */
+
+.formGroup {
+  flex-direction: column;
+}
+.formLine {
+  flex-direction: row;
+  margin: 10px;
+}
+
+/* ----------- Desktop ----------- */
+@media all and (min-width: 600px) {
+  section {
+    padding: 2% 0;
+  }
+  .headerGroup {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .group {
+    flex-direction: row;
+  }
+  .formGroup {
+    flex-direction: row;
+  }
+  .group.aboutGroup img {
+    align-items: baseline;
+    width: 300px;
+  }
+}
