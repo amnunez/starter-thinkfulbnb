@@ -84,7 +84,7 @@ form {
 }
 
 form label {
-  width: 50%;
+  width: 180px;
   font-weight: bold;
   margin-right: 25%;
 }
@@ -92,7 +92,7 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 50%;
+  width: 180px;
   justify-content: flex-end;
 }
 
@@ -152,10 +152,5 @@ footer p {
   }
   .formGroup {
     flex-direction: row;
-  }
-  .group.aboutGroup img {
-    align-items: baseline;
-    width: 300px;
-    margin: 10px;
   }
 }
