@@ -3,7 +3,9 @@
 body {
   font-family: "Lato", sans-serif;
 }
-
+section {
+  padding: 2% 5%;
+}
 h2 {
   font-size: 26px;
   font-weight: 400;
@@ -82,14 +84,16 @@ form {
 }
 
 form label {
+  width: 50%;
   font-weight: bold;
-  flex-direction: row;
+  margin-right: 25%;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 50%;
+  justify-content: flex-end;
 }
 
 form button {
@@ -137,7 +141,7 @@ footer p {
 /* ----------- Desktop ----------- */
 @media all and (min-width: 600px) {
   section {
-    padding: 2% 0;
+    padding: 2% 2%;
   }
   .headerGroup {
     justify-content: space-between;
@@ -152,5 +156,6 @@ footer p {
   .group.aboutGroup img {
     align-items: baseline;
     width: 300px;
+    margin: 10px;
   }
 }
