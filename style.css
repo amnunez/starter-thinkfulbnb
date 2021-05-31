@@ -152,5 +152,6 @@ footer p {
   }
   .formGroup {
     flex-direction: row;
+    margin: auto;
   }
 }
